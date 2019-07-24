@@ -1,0 +1,26 @@
+
+<%= form_for @song do |f| %>
+  <label>Song Title</label><br />
+  <%= f.text_field :title %><br />
+
+  <label>Artist</label><br />
+  <%= f.text_field :artist_name %><br />
+
+  <label>Released</label><br />
+  <%= f.check_box :released %><br />
+
+  <label>Year Released</label><br />
+  <%= f.number_field :release_year %><br />
+
+  <label>Genre</label><br />
+  <%= f.text_field :genre %><br />
+<br />
+  <%= f.submit %>
+<% end %>
+
+
+<!-- t.string   "title"
+t.boolean  "released"
+t.integer  "release_year"
+t.string   "artist_name"
+t.string   "genre" -->
